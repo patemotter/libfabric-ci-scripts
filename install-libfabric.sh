@@ -3,7 +3,7 @@
 echo "==> Building libfabric"
 # Pulls the libfabric repository and checks out the pull request commit
 cd ${HOME}
-git clone https://github.com/ofiwg/libfabric
+git clone https://github.com/patemotter/libfabric
 cd ${HOME}/libfabric
 if [ ! "$PULL_REQUEST_ID" = "None" ]; then
     git fetch origin +refs/pull/$PULL_REQUEST_ID/*:refs/remotes/origin/pr/$PULL_REQUEST_ID/*
